@@ -6,6 +6,7 @@ categories:
   - Paper
 tags:
   - NLP
+  - Transformer
 use_math: true
 toc: true
 toc_sticky: true
@@ -85,7 +86,7 @@ last_modified_at: 2021-09-11T02:56:00-05:00
 > - decoder의 "encoder-decoder attention"layer에서의 query는 이전 decoder layer로부터 계산되며, key와 value는 encoder의 출력에 해당한다.
 >   이러한 점으로 인해, decoder의 모든 포지션에 있는 값들이 input sequence의 모든 값들을 참조할 수 있게 된다. 이는 sequence-to-sequence 모델들의 encoder-decoder attention mechanism을 모방했다고 할 수 있다.
 > - encoder는 self-attention layer를 포함하며, 모든 key, value, 그리고 query는 이전 encoder layer의 output이라는 동일한 input sequence로부터 추출한다. encoder의 각 position들은 이전 encoder layer의 모든 position을 참조할 수 있다.
-> - decoder의 self attention layer 역시 비슷하게, decoder의 각각의 position들이 **해당 position까지의** 모든 position을 참조할 수 있도록 한다. 이 때, decoder에서의 leftward information flow를 막음으로써, auto-regressive한 성질을 보존하도록 해야 한다(미래 시점에 해당하는 position을 참조하지 못하도록 해야 함). 이러한 문제는 scaled dot-product attention부분에서 illegal connection에 해당하는 softmax input들을 $-\infin$로 masking out하도록 구현함으로써 해결한다.
+> - decoder의 self attention layer 역시 비슷하게, decoder의 각각의 position들이 **해당 position까지의** 모든 position을 참조할 수 있도록 한다. 이 때, decoder에서의 leftward information flow를 막음으로써, auto-regressive한 성질을 보존하도록 해야 한다(미래 시점에 해당하는 position을 참조하지 못하도록 해야 함). 이러한 문제는 scaled dot-product attention부분에서 illegal connection에 해당하는 softmax input들을 $- \infty $로 masking out하도록 구현함으로써 해결한다.
 
 #### Position-wise Feed-Forward Networks
 
