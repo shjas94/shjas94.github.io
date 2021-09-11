@@ -109,7 +109,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "shjas94@outlook.kr"
+      url: mailto:shjas94@outlook.kr
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://shjas94.github.io"
@@ -193,6 +193,7 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
+
 
 
 # Markdown Processing
