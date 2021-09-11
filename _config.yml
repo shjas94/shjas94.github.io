@@ -25,7 +25,7 @@ url                      : "https://shjas94.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/hjs_picture.jpg"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/hjs_logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -104,7 +104,7 @@ author:
   name             : "Jae Sub"
   avatar           : "/assets/images/hjs_picture.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Interested in Deep Learning"
-  location         : "South Korea"
+  location         : "Seoul, South Korea"
   email            :
   links:
     - label: "Email"
