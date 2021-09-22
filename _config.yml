@@ -123,8 +123,8 @@ author:
     #   icon: "fab fa-fw fa-instagram"
     #   # url: "https://instagram.com/"
 
-# header:
-#   image: "/assets/images/AI.jpg"
+header:
+  image: "/assets/images/AI.jpg"
 
 # Site Footer
 footer:
