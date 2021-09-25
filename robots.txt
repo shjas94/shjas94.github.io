@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://shjas94.github.io/sitemap.xml
